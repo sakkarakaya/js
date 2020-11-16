@@ -1,0 +1,22 @@
+body {
+	min-height: 1500px;
+}
+
+#output,
+#submit {
+	margin-top: 2rem;
+}
+
+.bg-black {
+	background-color: #111111;
+	color: #ffffff;
+}
+
+.border-red {
+	border: 2px solid red;
+}
+
+
+.ccc {
+	color: aqua;
+}
