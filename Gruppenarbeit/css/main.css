@@ -106,3 +106,7 @@
 .like-btn.liked {
   fill: red;
 }
+
+.like-btn.unliked {
+  fill: white;
+}

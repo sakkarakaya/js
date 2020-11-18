@@ -7,13 +7,13 @@
  */
 
 
- //document.getElementsByClassName("search-btn").addEventListener("click", f);
+ document.getElementsByClassName("search-btn")[0].addEventListener("click", f);
  function f(){
     document.getElementById("searchbar").classList.toggle("hidden");
  }
 
 
- //document.getElementById("x").addEventListener("click", f2);
+ document.querySelector("#x").addEventListener("click", f2);
  function f2(){
     document.getElementById("searcharea").value = "";
  }
