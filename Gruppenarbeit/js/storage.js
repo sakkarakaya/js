@@ -23,3 +23,5 @@ for (i = 0; i < 8; i++){
 //  function f5(){
 //     document.getElementById("test2").classList.add('liked');
 //  }
+
+//test
