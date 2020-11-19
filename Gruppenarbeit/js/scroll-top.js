@@ -7,3 +7,25 @@
  * scroll the page all the way up to the start
  * 
  */
+
+
+
+
+
+window.addEventListener("scroll", fscroll);
+
+function fscroll() {
+    var y =  window.scrollY; 
+    if (y >= window.innerHeight){
+        document.getElementById("return-to-top").setAttribute("class", "visible");
+    }
+    else{
+        document.getElementById("return-to-top").setAttribute("class", "");
+    }
+}
+
+
+document.getElementById("return-to-top").addEventListener("click", ftop);
+function ftop(){
+    document.documentElement.scrollTop = 0;
+}

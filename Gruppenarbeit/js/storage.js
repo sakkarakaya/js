@@ -14,7 +14,8 @@ var i;
 for (i = 0; i < 8; i++){
  document.getElementsByClassName("like-btn")[i].addEventListener("click", f4);
 }
- function f4(){
+ function f4(e){
+    e.preventDefault();
     this.classList.toggle('liked');
  }
 

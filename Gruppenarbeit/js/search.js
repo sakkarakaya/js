@@ -8,7 +8,8 @@
 
 
  document.getElementsByClassName("search-btn")[0].addEventListener("click", f);
- function f(){
+ function f(e){
+    e.preventDefault();
     document.getElementById("searchbar").classList.toggle("hidden");
  }
 
