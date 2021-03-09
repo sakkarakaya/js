@@ -1,30 +1,22 @@
-// listen to the submit of the form and prevent default
-document.getElementById('submit').addEventListener('click', h);
-function h(e){
-    e.preventDefault();
-    qw = document.getElementById('input').textContent;
-//    localStorage.setItem("input", qw);
+fetch("https://openlibrary.org/books/OL7353617M.json").then(res=>res.json()).then(y=>yaz(y))
+function yaz(y){
+    console.log(y.isbn_13);
+    const output = document.querySelector("#output");
+        output.innerHTML = `<h2>${y.isbn_10}</h2><p>${y.isbn_13}</p>`;
+
 }
 
-// then save the form data and send it to https://hsh.blnq.dev/javascript-basics/form-fetch.php
-// log the response
 
+/* const request = new XMLHttpRequest();
+request.open("GET", "https://openlibrary.org/books/OL7353617M.json");
+request.onreadystatechange = function() {
+    if (request.readyState == XMLHttpRequest.DONE) {
+        const book = JSON.parse(request.responseText);
+        console.log(book)
 
-
-
-
-// get data from public api https://openlibrary.org/books/OL7353617M.json
-var urll = "https://openlibrary.org/books/OL7353617M.json";
-var xhr = new XMLHttpRequest();
-xhr.open('GET', urll, true);
-xhr.onload = function(){
-    
-    //console.log(this.responseText);
-    var htmll = JSON.parse(request.responseText);
-
-    document.getElementById('output').innerHTML = `${htmll.title}`;
+        const output = document.querySelector("#output");
+        output.innerHTML = `<h2>${book.title}</h2><p>${book.first_sentence.value}</p><p>${book.isbn_13}</p>`;
+    }
 }
-xhr.send();
 
-
-// and display the title, first sentence & isbn 13 in the #output element
+request.send(); */

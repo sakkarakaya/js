@@ -9,3 +9,18 @@
  * https://github.com/axios/axios
  * 
  */
+
+ document.getElementById("support-form").addEventListener("submit", fsubmit);
+ function fsubmit(e){
+     e.preventDefault();
+     const formData = new FormData(this);
+     const request = new XMLHttpRequest();
+
+     request.open("POST", "https://hsh.blnq.dev/javascript-basics/form-fetch.php");
+     request.onreadystatechange = function(){
+         if(request.readyState == XMLHttpRequest.DONE){
+            console.log(request.responseText);
+         }
+     }
+     request.send(formData);
+ }
