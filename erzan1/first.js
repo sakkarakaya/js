@@ -1,7 +1,9 @@
 console.log("hi!")
 var s = 10;
+let b = 5
 {
-    let b = 3;
+    console.log(b);
 }
 console.log(s);
 console.log(b);
+
