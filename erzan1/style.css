@@ -1,0 +1,12 @@
+body{
+    background-color: #eceff1;
+    text-align: center;
+}
+
+.inp{
+    border-width: 5;
+}
+
+#btn{
+    margin: 10px;
+}
