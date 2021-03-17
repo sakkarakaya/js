@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax Web Demo</title>
-    <link rel="stylesheet" href="style.css"
-</head>
+    <link rel="stylesheet" href="style.css" </head>
 
 <body>
+    <div class="toggle">
+        <input type="checkbox" id="demo" onChange="togglefunc()">
+        <label for="demo"></label>
+    </div>
+
     <!-- Section One -->
     <Section>
         <p>Parallax Website</p>
@@ -17,7 +22,11 @@
     <!-- Section Two -->
     <Section>
         <h2>Lorem Two</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fuga autem suscipit aspernatur assumenda quo, odit non porro nihil quidem ducimus vitae aliquam voluptate deserunt nisi sed totam repudiandae animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, repellat laborum! Ad provident harum qui nulla possimus impedit deleniti ipsum temporibus molestiae quasi, ipsa tenetur, libero, veniam est veritatis culpa.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fuga autem suscipit aspernatur assumenda quo,
+            odit non porro nihil quidem ducimus vitae aliquam voluptate deserunt nisi sed totam repudiandae animi? Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, repellat laborum! Ad provident harum qui
+            nulla possimus impedit deleniti ipsum temporibus molestiae quasi, ipsa tenetur, libero, veniam est veritatis
+            culpa.</p>
     </Section>
 
     <!-- Section Three -->
@@ -28,7 +37,11 @@
     <!-- Section Four -->
     <Section>
         <h2>Lorem Four</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fuga autem suscipit aspernatur assumenda quo, odit non porro nihil quidem ducimus vitae aliquam voluptate deserunt nisi sed totam repudiandae animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, repellat laborum! Ad provident harum qui nulla possimus impedit deleniti ipsum temporibus molestiae quasi, ipsa tenetur, libero, veniam est veritatis culpa.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fuga autem suscipit aspernatur assumenda quo,
+            odit non porro nihil quidem ducimus vitae aliquam voluptate deserunt nisi sed totam repudiandae animi? Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, repellat laborum! Ad provident harum qui
+            nulla possimus impedit deleniti ipsum temporibus molestiae quasi, ipsa tenetur, libero, veniam est veritatis
+            culpa.</p>
     </Section>
 
     <!-- Section Five -->
@@ -39,13 +52,28 @@
     <!-- Section Six -->
     <Section>
         <h2>Amet Six</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fuga autem suscipit aspernatur assumenda quo, odit non porro nihil quidem ducimus vitae aliquam voluptate deserunt nisi sed totam repudiandae animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, repellat laborum! Ad provident harum qui nulla possimus impedit deleniti ipsum temporibus molestiae quasi, ipsa tenetur, libero, veniam est veritatis culpa.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fuga autem suscipit aspernatur assumenda quo,
+            odit non porro nihil quidem ducimus vitae aliquam voluptate deserunt nisi sed totam repudiandae animi? Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, repellat laborum! Ad provident harum qui
+            nulla possimus impedit deleniti ipsum temporibus molestiae quasi, ipsa tenetur, libero, veniam est veritatis
+            culpa.</p>
     </Section>
 
     <!-- Section Seven -->
     <Section>
         <p>Seven</p>
     </Section>
-    
+
+    <script>
+        function togglefunc(){
+            var elements = document.querySelectorAll("section, section p");
+            var i;
+            for(i=0; i < elements.length; i++){
+                elements[i].classList.toggle("section-dark")
+            }
+        }
+    </script>
+
 </body>
+
 </html>
